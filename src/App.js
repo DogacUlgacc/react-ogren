@@ -8,6 +8,7 @@ function Page() {
             <Navbar />
             <Card />
             <p>lorem ipsum </p>
+            <p>lorem 2</p>
         </div>
     );
 }
