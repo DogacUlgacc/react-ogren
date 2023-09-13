@@ -7,7 +7,6 @@ function Page() {
         <div>
             <Navbar />
             <Card />
-            <img src="/logo192.png" />
         </div>
     );
 }
