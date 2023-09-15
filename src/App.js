@@ -7,8 +7,7 @@ function Page() {
         <div>
             <Navbar />
             <Card />
-            <p>lorem ipsum </p>
-            <p>lorem 2</p>
+            <h3>deneme123</h3>
         </div>
     );
 }
