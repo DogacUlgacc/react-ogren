@@ -9,6 +9,7 @@ function Page() {
             <Card />
             <h3>deneme123</h3>
             <p>lorem morem</p>
+            <p>oldu mu acaba</p>
         </div>
     );
 }
