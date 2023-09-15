@@ -8,7 +8,7 @@ function Page() {
             <Navbar />
             <Card />
             <h3>deneme123</h3>
-            <h3>a</h3>
+            <p>lorem morem</p>
         </div>
     );
 }
