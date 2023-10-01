@@ -56,29 +56,28 @@ export default function Weather() {
                     />
                 </form>
 
-                <div
-                    className={`weather-condition-img ${
-                        isLoading || error ? "nondisplay" : "display"
-                    }`}
-                >
-                    <img
-                        src={
-                            data &&
-                            `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
-                        }
-                        alt="Weather Icon"
-                        id="weather-img"
-                    />
-                    <div id="condition-status">
-                        <div className="col-6">
-                            {data ? `${Math.round(data.main.temp)}°C` : ""}
-                        </div>
+                {data && (
+                    <div
+                        className={`weather-condition-img ${
+                            isLoading || error ? "nondisplay" : "display"
+                        }`}
+                    >
+                        <img
+                            src={`https://openweathermap.org/img/w/${data.weather[0].icon}.png`}
+                            alt="Weather Icon"
+                            id="weather-img"
+                        />
+                        <div id="condition-status">
+                            <div className="col-6">
+                                {data ? `${Math.round(data.main.temp)}°C` : ""}
+                            </div>
 
-                        <div className="col-6">
-                            {data && data.weather[0].description}
+                            <div className="col-6">
+                                {data && data.weather[0].description}
+                            </div>
                         </div>
                     </div>
-                </div>
+                )}
 
                 {isLoading ? (
                     <p className="loading-text">Loading...</p>
